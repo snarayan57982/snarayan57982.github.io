@@ -1110,7 +1110,26 @@ Sidebar
 
 
 </div>
+<p>Select your favorite album:</p>
+<form action="/action_page.php">
+  <input type="radio" name="album" onclick="myFunction(this.value)" value="Pray For The Wicked">Pray For the Wicked<br>
+  <input type="radio" name="album" onclick="myFunction(this.value)" value="Death of a Bachelor">Death of a Bachelor<br>
+  <input type="radio" name="album" onclick="myFunction(this.value)" value="Too Weird to Live, Too Rare to Die!">Too Weird to Live, Too Rare to Die!<br>
+  <input type="radio" name="album" onclick="myFunction(this.value)" value="Vices and Virtues">Vices and Virtues<br>
+  <input type="radio" name="album" onclick="myFunction(this.value)" value="...Live in Chicago">...Live in Chicago<br>
+  <input type="radio" name="album" onclick="myFunction(this.value)" value="Pretty.Odd.">Pretty. Odd.<br>
+  <input type="radio" name="album" onclick="myFunction(this.value)" value="A Fever You Can't Sweat Out">A Fever You Can't Sweat Out<br>
+  <input type="radio" name="album" onclick="myFunction(this.value)" value="From Under A Cork Tree">From Under a Cork Tree<br><br>
 
+  Your favorite album is: <input type="text" id="result">
+  <input type="submit" value="Submit form">
+</form>
+
+<script>
+function myFunction(browser) {
+    document.getElementById("result").value = browser;
+}
+</script>
 
 <div class="extra1" role="presentation"></div><div class="extra2" role="presentation"></div><div class="extra3" role="presentation"></div>
 <div class="extra4" role="presentation"></div><div class="extra5" role="presentation"></div><div class="extra6" role="presentation"></div>
